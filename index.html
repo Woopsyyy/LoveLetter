@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Password Modal -->
+    <div class="password-modal" id="passwordModal">
+        <div class="password-content">
+            <h2>Enter the secret code</h2>
+            <input type="password" class="password-input" id="passwordInput" placeholder="nickname that I call you">
+            <button class="submit-btn" id="submitPassword">Enter</button>
+        </div>
+    </div>
+    
+    <!-- Welcome Screen -->
+    <div class="welcome-screen" id="welcomeScreen">
+        <h1 class="welcome-message">Welcome my love, enjoy your stay</h1>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container" id="mainContent" style="display: none;">
+        <div class="tabs">
+            <button class="tab active" data-tab="love-letter">
+                <span>❤️</span> Love Letter
+            </button>
+            <button class="tab" data-tab="music">
+                <span>🎵</span> Music
+            </button>
+            <button class="tab" data-tab="notes">
+                <span>📝</span> Notes
+            </button>
+            <button class="tab" data-tab="gallery">
+                <span>🌷</span> Gallery
+            </button>
+        </div>
+        
+        <div class="content-area">
+            <!-- Love Letter Tab -->
+            <div class="tab-content active" id="love-letter">
+                <h2>My Dearest</h2>
+                <div class="letter" id="loveLetter">
+                    <div class="letter-header">
+                        <h3>A Letter For You</h3>
+                        <span>👇 Click to open</span>
+                    </div>
+                    <div class="letter-content">
+                        <p>My insik,</p>
+                        <p>Every day with you feels like a beautiful
+dream that I never want to wake up from. Your smile brightens my darkest
+ days, and your laughter is my favorite melody.</p>
+                        <p>I cherish every moment we spend together,
+from our silly inside jokes to our deep conversations under the stars.
+You've shown me what true happiness feels like, and I'm forever grateful
+ to have you in my life.</p>
+                        <p>No matter where life takes us, always remember that my heart belongs to you.</p>
+                        <p>Forever yours,</p>
+                        <p>Josh</p>
+                        <div class="like-section">
+                            <button class="like-btn" id="likeBtn" aria-label="Like this letter" title="Like this letter">
+                                <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true">
+                                    <path class="heart-outline" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="#d81b60" stroke-width="2" fill="none"/>
+                                    <path class="heart-fill" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#d81b60" opacity="0"/>
+                                </svg>
+                                <span class="like-text">Like this letter</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Music Tab -->
+            <div class="tab-content" id="music">
+                <h2>Songs that remind me of you</h2>
+                <div class="song">
+                    <div class="song-icon">🎵</div>
+                    <div class="song-info">
+                        <h4>Iris</h4>
+                        <p>by The Goo Goo Dolls</p>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="song-icon">🎵</div>
+                    <div class="song-info">
+                        <h4>Photograph</h4>
+                        <p>by Ed Sheeran</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Notes Tab -->
+            <div class="tab-content" id="notes">
+                <h2>Some reminders</h2>
+                <div class="note">
+                    <p>Take care always</p>
+                </div>
+                <div class="note">
+                    <p>Eat on time</p>
+                </div>
+                <div class="note">
+                    <p>Drink a lot of water</p>
+                </div>
+                <div class="note">
+                    <p>Fix your body clock</p>
+                </div>
+                <div class="note">
+                    <p>You're mine.. always</p>
+                </div>
+                 
+            </div>
+            
+            <!-- Gallery Tab -->
+            <div class="tab-content" id="gallery">
+                <h2>Flowers for you</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="images/tulips.jpg" alt="Bouquet of delicate pink roses with soft green leaves">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tulips2.jpg" alt="Beautiful pink tulips in a glass vase with morning dew">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tulips3.jpg" alt="Fluffy pink peony flowers with lush foliage">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tulips4.jpg" alt="Branch of pink cherry blossoms against a blue sky">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tulips5.jpg" alt="Cluster of light pink carnations with delicate petals">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tulips6.jpg" alt="Vibrant pink azalea flowers covering a garden bush">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Decorative elements -->
+    <div class="heart" style="top: 10%; left: 5%;">❤️</div>
+    <div class="heart" style="top: 20%; right: 10%;">❤️</div>
+    <div class="heart" style="bottom: 15%; left: 15%;">❤️</div>
+    <div class="teddy-bear" style="top: 30%; left: 10%;">🧸</div>
+    <div class="teddy-bear" style="bottom: 10%; right: 5%;">🧸</div>
+    
+    
+
+
+<div class="heart" style="left: 41.2703%; top: 12.0317%; animation-delay: 4.55332s;">❤️</div><div class="heart" style="left: 11.4482%; top: 98.0324%; animation-delay: 2.90581s;">❤️</div><div class="heart" style="left: 81.1435%; top: 24.8151%; animation-delay: 4.34451s;">❤️</div><div class="heart" style="left: 92.2461%; top: 86.5921%; animation-delay: 2.70437s;">❤️</div><div class="heart" style="left: 50.6406%; top: 50.7297%; animation-delay: 0.428006s;">❤️</div><div class="heart" style="left: 62.2954%; top: 43.4693%; animation-delay: 1.47535s;">❤️</div><div class="heart" style="left: 76.7742%; top: 9.18385%; animation-delay: 4.12421s;">❤️</div><div class="heart" style="left: 63.5942%; top: 49.5818%; animation-delay: 1.84931s;">❤️</div><div class="heart" style="left: 10.9433%; top: 93.338%; animation-delay: 2.59233s;">❤️</div><div class="heart" style="left: 87.7649%; top: 96.439%; animation-delay: 0.0192127s;">❤️</div><div class="heart" style="left: 19.8803%; top: 72.8462%; animation-delay: 0.836236s;">❤️</div><div class="heart" style="left: 75.7771%; top: 86.1014%; animation-delay: 0.553649s;">❤️</div><div class="heart" style="left: 66.3224%; top: 45.5434%; animation-delay: 2.52702s;">❤️</div><div class="heart" style="left: 52.761%; top: 64.4125%; animation-delay: 3.95054s;">❤️</div><div class="heart" style="left: 27.1529%; top: 93.5831%; animation-delay: 3.10596s;">❤️</div><div class="teddy-bear" style="left: 19.8722%; top: 43.4313%; animation-delay: 1.09383s;">🧸</div><div class="teddy-bear" style="left: 85.8571%; top: 59.8953%; animation-delay: 2.89996s;">🧸</div><div class="teddy-bear" style="left: 51.1371%; top: 61.1628%; animation-delay: 2.21872s;">🧸</div><div class="teddy-bear" style="left: 31.8516%; top: 36.2028%; animation-delay: 2.39184s;">🧸</div><div class="teddy-bear" style="left: 25.216%; top: 15.9553%; animation-delay: 2.02366s;">🧸</div>
+<script src="script.js"></script>    
+</body>
+</html>
